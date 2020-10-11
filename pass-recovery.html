@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- &display=swap&subset=cyrillic-ext -->
+	<link rel="stylesheet" href="css/pass-recovery.css">
+	<title>Урок №10 Восстановление пароля</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="form__body">
+			<h1 class="form__title">Восстановление пароля</h1>
+			<div class="container">
+				<form class="form" action="#">
+					<div class="form__item">
+						<label class="form__lable" for="useremail">Введите Email, на него будет выслан новый пароль</label>
+						<input class="form__input" id="useremail" placeholder="Почта*" name="form[]" value="" type="email">
+					</div>
+					<div class="form__item">
+						<a href="index.html" class="return__link"><span>Вернуться в форму авторизации</span></a>
+					</div>
+					<div class="form__item">
+						<button class="button" autofocus type="submit">Отправить</button>
+					</div>
+					<div class="form__item">
+						<p class="form__text">* Если вы не получили письмо с паролем,
+							проверьте папку Спам.</p>
+					</div>
+					<div class="form__item registration">
+						<label for="formreg" class="label__reg">У вас нет аккаунта?</label>
+						<a class="form__link" id="formreg" href="registration.html">Регистрация</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- &display=swap&subset=cyrillic-ext -->
+	<link rel="stylesheet" href="css/registration.css">
+	<title>Урок №10 Регистрация</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<h1 id="reg" class="form__title">Регистрация</h1>
+			<form class="form" action="#">
+				<div class="form__item">
+					<input id="userfirstname" class="form__input" tabindex="1" autocomplete="off" placeholder="Имя*"
+						name="form[]" value="" type="text">
+				</div>
+				<div class="form__item">
+					<input id="userlastname" class="form__input" tabindex="2" autocomplete="off" placeholder="Фамилия*"
+						name="form[]" value="" type="text">
+				</div>
+				<div class="form__item">
+					<input id="userlogin" class="form__input" tabindex="3" autocomplete="off" placeholder="Логин*"
+						name="form[]" value="" type="text">
+				</div>
+				<div class="form__item">
+					<input id="useremail" class="form__input" tabindex="4" autocomplete="off" placeholder="EMail*"
+						name="form[]" value="" type="email">
+				</div>
+				<div class="form__item">
+					<input id="userpass" class="form__input" tabindex="5" autocomplete="off" placeholder="Пароль*"
+						name="form[]" value="" type="password">
+				</div>
+				<div class="form__item">
+					<input class="form__input" tabindex="6" autocomplete="off" placeholder="Повторите пароль*" name="form[]"
+						value="" type="password">
+				</div>
+				<div class="form__item">
+					<div class="radio__options">
+						<input id="usermale" class="radio__input" tabindex="7" name="sex" value="male" type="radio">
+						<label class="radio__label label" tabindex="7" for="usermale">Мужчина</label>
+					</div>
+
+					<div class="radio__options">
+						<input id="userfemale" class="radio__input" tabindex="7" name="sex" value="female" type="radio">
+						<label class="radio__label label" tabindex="7" for="userfemale">Женщина</label>
+					</div>
+				</div>
+				<div class="form__item checkbox">
+					<input id="checkterms" class="checkbox__input" tabindex="8" type="checkbox">
+					<label class="checkbox__label label" tabindex="8" for="checkterms">Я согласен с</label>
+					<a tabindex="8" class="form__link"
+						href="http://www.nb-guide.info/portal/interesting-3/pravila-polzovaniya-holodilnikom/">Условия и
+						правила</a>
+				</div>
+				<div class="form__item">
+					<button tabindex="9" class="button" autofocus type="submit">Регистрация</button>
+				</div>
+				<div class="form__item registration">
+					<label for="formreg" class="label__reg">У вас есть аккаунт?</label>
+					<a tabindex="10" class="form__link" id="formreg"
+						href="https://www.youtube.com/watch?v=mRRU_7N8STU">Войти</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+
+</html>

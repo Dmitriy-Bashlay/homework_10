@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- &display=swap&subset=cyrillic-ext -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Урок №10 Вход</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="form__title">Вход</h1>
+			<form class="form" action="#" method="get">
+				<div class="form__item">
+					<input class="form__input" placeholder="Почта*" name="form[]" value="" type="email">
+				</div>
+				<div class="form__item">
+					<input class="form__input" placeholder="Пароль*" name="form[]" value="" type="password">
+				</div>
+				<div class="form__item rememb">
+					<div class="rememb__checkbox checkbox">
+						<input class="checkbox__input" id="checkrememb" type="checkbox">
+						<label class="checkbox__label label" for="checkrememb">Запомнить меня</label>
+					</div>
+					<div class="rememb__pass">
+						<a class="form__link" href="pass-recovery.html">Забыли
+							пароль?</a>
+					</div>
+				</div>
+				<div class="form__item">
+					<button class="button" autofocus type="submit">Войти</button>
+				</div>
+				<div class="form__item registration">
+					<label class="label__reg">У вас нет аккаунта?</label>
+					<a class="form__link lable" href="registration.html">Регистрация</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+
+</html>

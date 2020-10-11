@@ -1,0 +1,243 @@
+/* Подключение шрифтов --------------------------------------------*/
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+/* /Подключение шрифтов -----------------------------------------*/
+
+/* Обнуляющий стиль ---------------------------------------------*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+	font-family: Gilroy;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input[type="text"],
+input[type="emeil"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+/* /Обнуляющий стиль---------------------------------------------*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.input {
+	border-radius: 0px !important;
+}
+/* --------------------------------------------------------------*/
+
+.form__body {
+	max-width: 501px;
+	margin: 0px auto;
+	padding: 16px 30px 20px 30px;
+	background-color: #111428;
+}
+.container {
+	max-width: 385px;
+	margin: 0px auto;
+}
+
+.form__title {
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 46px;
+	color: #ffffff;
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+}
+
+.form .form__item:not(:last-child) {
+	margin: 0px 0px 30px 0px;
+}
+
+.form__lable {
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #64b369;
+	margin: 0px 0px 40px 0px;
+}
+.form__input {
+	width: 100%;
+	font-size: 18px;
+	line-height: 21px;
+	padding: 15px 20px;
+	border-radius: 5px;
+	color: #111428;
+}
+.form__input:hover {
+	background: linear-gradient(
+		to bottom,
+		rgba(135, 224, 253, 1) 0%,
+		rgba(83, 203, 241, 1) 40%,
+		rgba(5, 171, 224, 1) 100%
+	);
+}
+.form__input:focus {
+	border-radius: 5px;
+	background: linear-gradient(
+		to bottom,
+		rgba(135, 224, 253, 1) 0%,
+		rgba(83, 203, 241, 1) 40%,
+		rgba(5, 171, 224, 1) 100%
+	);
+	color: #fff;
+}
+.return__link {
+	color: #fff;
+	position: relative;
+}
+.return__link span {
+	padding: 0px 0px 0px 40px;
+	display: inline-block;
+}
+
+.return__link:before {
+	content: "";
+	background: url("../img/arrow.svg") center / 100% no-repeat;
+	width: 15px;
+	height: 14px;
+	position: absolute;
+	left: 15px;
+	transition: all 0.2s ease 0s;
+}
+.return__link:hover:before {
+	content: "";
+	background: url("../img/arrow.svg") center / 100% no-repeat;
+	width: 15px;
+	height: 14px;
+	position: absolute;
+	left: 0px;
+}
+.button {
+	width: 100%;
+	background: #337ab7;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 50px;
+	color: #ffffff;
+	cursor: pointer;
+	transition: all 0.5s linear 0s;
+}
+.button:hover {
+	background: linear-gradient(
+		to bottom,
+		rgba(135, 224, 253, 1) 0%,
+		rgba(83, 203, 241, 1) 40%,
+		rgba(5, 171, 224, 1) 100%
+	);
+}
+.button:active {
+	box-shadow: inset 0 0 15px 5px rgba(7, 0, 102, 0.575);
+}
+.form__text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #aeaeae;
+}
+.registration {
+	text-align: center;
+}
+.label__reg {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+	margin: 0px 10px 0px 0px;
+}
+.form__link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #88b364;
+}
+.form__link:hover {
+	color: #337ab7;
+}
